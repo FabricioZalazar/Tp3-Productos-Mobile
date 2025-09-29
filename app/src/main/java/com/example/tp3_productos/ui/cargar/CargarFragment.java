@@ -56,6 +56,9 @@ public class CargarFragment extends Fragment {
     public void onResume() {
         super.onResume();
         binding.tvMensajeCargar.setText("");
+        binding.etCodigoCargar.setText("");
+        binding.etDescripcionCargar.setText("");
+        binding.etPrecioCargar.setText("");
 
     }
 
