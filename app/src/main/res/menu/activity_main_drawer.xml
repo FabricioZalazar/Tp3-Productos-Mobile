@@ -13,6 +13,10 @@
             android:icon="@drawable/icon_menu_cargar"
             android:title="@string/cargar" />
         <item
+            android:id="@+id/nav_buscar"
+            android:icon="@drawable/icon_menu_buscar"
+            android:title="@string/buscar" />
+        <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/icon_menu_salir"
             android:title="@string/salir" />

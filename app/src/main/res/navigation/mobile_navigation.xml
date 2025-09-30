@@ -18,8 +18,28 @@
         tools:layout="@layout/fragment_cargar" />
 
     <fragment
+        android:id="@+id/nav_buscar"
+        android:name="com.example.tp3_productos.ui.buscar.BuscarFragment"
+        android:label="Buscar"
+        tools:layout="@layout/fragment_buscar" >
+        <action
+            android:id="@+id/action_nav_buscar_to_resultadoBuscarFragment"
+            app:destination="@id/resultadoBuscarFragment" />
+    </fragment>
+
+    <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.tp3_productos.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/resultadoBuscarFragment"
+        android:name="com.example.tp3_productos.ui.buscar.ResultadoBuscarFragment"
+        android:label="@string/resulatado_de_busqueda"
+        tools:layout="@layout/fragment_resultado_buscar" >
+        <action
+            android:id="@+id/action_resultadoBuscarFragment_to_nav_buscar"
+            app:destination="@id/nav_buscar" />
+    </fragment>
 </navigation>
